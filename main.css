@@ -11,15 +11,74 @@ img {
     width: 100%;
 }
 
+/*------header------*/
+
+
+
+/*------fonte------*/
+
 h1,
 h2,
 h3 {
     font-family: 'Big Shoulders Display', cursive;
-    padding-bottom: 10px;
+    padding-bottom: 14px;
+}
+
+h1 {
+    font-size: 1.6rem;
+    letter-spacing: 1.05px;
+}
+
+h2 {
+    font-size: 1.45rem;
+    letter-spacing: 1.05px;
+}
+
+h3 {
+    font-size: 1.3rem;
+    letter-spacing: 1.05px;
 }
 
 p {
     font-family: 'Montserrat', sans-serif;
     font-size: 0.85rem;
     line-height: 1.5;
+}
+
+@media (min-width:700px) {
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    h3 {
+        font-size: 1.45rem;
+    }
+
+    p {
+        line-height: 1.5;
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width:900px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    h3 {
+        font-size: 1.6rem;
+    }
+
+    p {
+        line-height: 1.5;
+        font-size: 1rem;
+    }
 }
