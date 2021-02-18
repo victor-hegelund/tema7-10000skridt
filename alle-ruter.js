@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const container = document.querySelector("section");
     const template = document.querySelector("template");
 
     const url = "https://titusinde-2763.restdb.io/rest/ruter";
@@ -24,11 +23,11 @@ document.addEventListener("DOMContentLoaded", () => {
         console.log("vis")
         ruter.forEach(rute => {
             let klon = template.cloneNode(true).content;
-            klon.querySelector("img").src = imgUrl + rute.billede;
+            klon.querySelector(".the_img").src = imgUrl + rute.billede;
             klon.querySelector("h2").textContent = rute.navn
             klon.querySelector(".skridt").textContent = rute.skridt;
             klon.querySelector(".placering").textContent = rute.placering;
-            container.appendChild(klon);
+            document.querySelector(".rute-list .content").appendChild(klon);
         })
     }
 })
