@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="">
+    <style>
+        article {
+            border: solid 1px #000;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <section></section>
+    <template>
+        <article>
+            <img src="" alt="">
+            <h2></h2>
+            <p class="title"></p>
+            <p class="hobby"></p>
+            <p class="troende">Troende: </p>
+            <p class="fødselsdag"></p>
+        </article>
+    </template>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const container = document.querySelector("section");
+            const template = document.querySelector("template");
+
+            const url = "https://titusinde-2763.restdb.io/rest/ruter";
+            const imgUrl = "https://titusinde-2763.restdb.io/media/";
+            const dato = /[0-9][0-9][0-9][0-9][-][0-9][0-9]-[0-9][0-9]/;
+
+            const options = {
+                headers: {
+                    'x-apikey': "602e73575ad3610fb5bb6331"
+                }
+            };
+
+            hentdata(url);
+            async function hentdata() {
+                console.log("hentdata")
+                const result = await fetch(url, options);
+                const json = await result.json();
+                console.log(json)
+                vis(json);
+            }
+
+            function vis(personer) {
+                console.log("vis")
+                personer.forEach(person => {
+                    let klon = template.cloneNode(true).content;
+                    klon.querySelector("img").src = imgUrl + person.billede;
+                    klon.querySelector("h2").textContent = `${person.fornavn} ${person.fornavn}`;
+                    klon.querySelector(".title").textContent = person.titel;
+                    klon.querySelector(".hobby").textContent = person.hobby;
+                    klon.querySelector(".troende").textContent += person.troende;
+                    klon.querySelector(".fødselsdag").textContent = person.fødselsdag.match(dato);
+                    container.appendChild(klon);
+                })
+            }
+        })
+    </script>
+</body></html>

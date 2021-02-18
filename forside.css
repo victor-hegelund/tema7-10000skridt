@@ -1,11 +1,7 @@
-main {
-    margin: 0 20px;
-}
-
 /*-----sectioner-----*/
 
 #indledning {
-    margin: 20px 0;
+    margin: 22px 15px;
 }
 
 #indledning .left_col {
@@ -13,15 +9,25 @@ main {
 }
 
 #knaptilruter {
-    margin: 20px 0;
+    margin: 22px 15px;
 }
 
 #knaptilruter .text_col {
     padding-bottom: 10px;
 }
 
+#knaptilruter button {
+    border: 1px solid black;
+    background-color: Transparent;
+    color: black;
+    padding: 8px 25px;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
 #community {
-    margin: 20px 0;
+    margin: 22px 15px;
 }
 
 #community .text_col {
@@ -29,7 +35,20 @@ main {
 }
 
 #newsletter {
-    padding: 20px;
+    width: 100%;
+    background-color: #BA9A80;
+    padding: 22px;
+    margin: 0px;
+}
+
+#newsletter .text_col {
+    padding-bottom: 10px;
+}
+
+#newsletter input {
+    width: 100%;
+    height: 7vw;
+    font-family: 'Montserrat', sans-serif;
 }
 
 @media (min-width:700px) {}
