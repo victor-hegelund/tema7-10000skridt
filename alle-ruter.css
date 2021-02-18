@@ -2,6 +2,13 @@
     background: #fff;
     position: relative;
     padding: 50px;
-    margin: -100px 10px 0 10px;
+    margin: -100px 10px 50px 10px;
     border: solid 1px #000;
+}
+
+.rute-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+    background-color: red;
 }
