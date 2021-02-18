@@ -11,21 +11,21 @@
  document.addEventListener("DOMContentLoaded", loadJSON)
 
  async function loadJSON() {
-     const JSONData = await fetch(`https://babushka-dd8a.restdb.io/rest/menu/${id}`, {
+     const JSONData = await fetch(`https://titusinde-2763.restdb.io/rest/ruter/${id}`, {
          headers: myHeaders
      });
      ret = await JSONData.json();
-     console.log("Ruter", rute);
-     visRet(ret);
+     console.log("Ruter", ruter);
+     visRuter(rute);
  }
 
- function visRet() {
+ function visRuter() {
 
-     document.querySelector(".langBeskrivelse").textContent = ret.langBeskrivelse;
-     document.querySelector(".billede").src = medieurl + ret.billede;
-     document.querySelector(".skridt").textContent = ret.skridt;
-     document.querySelector(".placering").textContent = ret.placering;
-     document.querySelector(".bonus_info").textContent = ret.bonus_info;
+     document.querySelector(".langBeskrivelse").textContent = rute.langBeskrivelse;
+     document.querySelector(".billede").src = medieurl + rute.billede;
+     document.querySelector(".skridt").textContent = rute.skridt + " Antal";
+     document.querySelector(".placering").textContent = rute.placering;
+     document.querySelector(".bonus_info").textContent = rute.bonus_info;
      document.querySelector("button").addEventListener("click", tilbage);
  }
 
@@ -35,9 +35,6 @@
 
 
 
- //Web URL
- //https://titusinde-2763.restdb.io/rest/ruter
- //
 
 
  //document.addEventListener("DOMContentLoaded", () => {

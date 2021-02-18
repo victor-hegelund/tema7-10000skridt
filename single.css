@@ -2,7 +2,7 @@
     background: #fff;
     position: relative;
     padding: 50px;
-    margin: -100px 10px 0 10px;
+    margin: -100px 30px 0 30px;
     border: solid 1px #000;
 }
 
@@ -14,7 +14,7 @@ button {
     border-radius: 5px;
     border: 2px solid white;
 
-    padding: 18px 34px;
+    padding: 10px 25px;
     font-size: 1.1rem;
     text-align: center;
     text-decoration: none;
@@ -33,4 +33,11 @@ button:hover {
     background-color: white;
     color: #25434D;
     border: 2px solid #25434D;
+}
+
+.billede {
+
+    object-position: center;
+    width: 70%;
+    height: 70%;
 }
