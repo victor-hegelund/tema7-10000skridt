@@ -1,1 +1,37 @@
+main {
+    margin: 0 20px;
+}
 
+/*-----sectioner-----*/
+
+#indledning {
+    margin: 20px 0;
+}
+
+#indledning .left_col {
+    padding-bottom: 10px;
+}
+
+#knaptilruter {
+    margin: 20px 0;
+}
+
+#knaptilruter .text_col {
+    padding-bottom: 10px;
+}
+
+#community {
+    margin: 20px 0;
+}
+
+#community .text_col {
+    padding-bottom: 10px;
+}
+
+#newsletter {
+    padding: 20px;
+}
+
+@media (min-width:700px) {}
+
+@media (min-width:950px) {}
