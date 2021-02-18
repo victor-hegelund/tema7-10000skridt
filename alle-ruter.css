@@ -7,8 +7,22 @@
 }
 
 .rute-list {
+    background-color: red;
+}
+
+.content {
+    max-width: 800px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 20px;
-    background-color: red;
+}
+
+.the_img {
+    object-fit: cover;
+    object-position: center center;
+    height: 160px;
 }

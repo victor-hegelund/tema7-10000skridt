@@ -1,38 +1,83 @@
-/*-----sectioner-----*/
+/*-----section 1-----*/
 
 #indledning {
-    margin: 22px 15px;
+    margin: 22px 15px 50px 15px;
 }
 
 #indledning .left_col {
     padding-bottom: 10px;
 }
 
+/*-----section 2-----*/
+
 #knaptilruter {
-    margin: 22px 15px;
+    margin: 22px 15px 50px 15px;
+
 }
 
 #knaptilruter .text_col {
     padding-bottom: 10px;
 }
 
+#knaptilruter .img_col {
+    /*    display: grid;*/
+    position: relative;
+}
+
+/*
+#knaptilruter img,
+button {
+    grid-area: 1/1;
+}
+*/
+
+#knaptilruter img {
+    object-fit: cover;
+}
+
 #knaptilruter button {
-    border: 1px solid black;
+    border: 2px solid #25434D;
     background-color: Transparent;
-    color: black;
-    padding: 8px 25px;
+    color: #25434D;
+
+    padding: 18px 34px;
+    font-size: 1.1rem;
     text-align: center;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
+
+    cursor: pointer;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
 }
 
+#knaptilruter button:hover {
+    background-color: #25434D;
+    color: white;
+}
+
+/*-----section 3-----*/
+
 #community {
-    margin: 22px 15px;
+    margin: 22px 15px 50px 15px;
+
 }
 
 #community .text_col {
     padding-bottom: 10px;
 }
+
+#community .img_col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+}
+
+/*-----section 4-----*/
 
 #newsletter {
     width: 100%;
@@ -47,10 +92,63 @@
 
 #newsletter input {
     width: 100%;
-    height: 7vw;
+    height: 35px;
     font-family: 'Montserrat', sans-serif;
 }
 
-@media (min-width:700px) {}
+@media (min-width:700px) {
 
-@media (min-width:950px) {}
+    /*-----section 1-----*/
+
+    #indledning {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /*-----section 4-----*/
+
+    #newsletter .tilmeld {
+
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+
+    #newsletter .tilmeld .fuldenavn,
+    .email {
+        margin: 0px;
+    }
+}
+
+@media (min-width:900px) {
+
+    /*-----section 1-----*/
+    #indledning {
+        max-width: 1100px;
+        margin: 22px auto 50px auto;
+    }
+
+    /*-----section 2-----*/
+    #knaptilruter {
+        max-width: 1100px;
+        margin: 22px auto 50px auto;
+    }
+
+    /*-----section 3-----*/
+
+    #community {
+        max-width: 1100px;
+        margin: 22px auto 50px auto;
+    }
+
+    #community .img_col {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
+    }
+
+    /*-----section 4-----*/
+
+    #newsletter {}
+}
