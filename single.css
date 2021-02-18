@@ -35,8 +35,8 @@ button:hover {
     border: 2px solid #25434D;
 }
 
-.billede {
-
+#mellem .billede {
+    margin: 50px;
     object-position: center;
     width: 70%;
     height: 70%;
