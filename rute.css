@@ -6,6 +6,25 @@
     border: solid 1px #000;
 }
 
+
+
+#mellem .billede {
+    margin: 50px;
+    object-position: center;
+    width: 70%;
+    height: 70%;
+}
+
+
+article {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+/*    grid-auto-rows: 1fr;*/
+    grid-gap: 10px;
+    margin: 20px;
+}
+
+
 button {
     font-family: 'Big Shoulders Display', cursive;
     background-color: #25434D;
@@ -23,8 +42,8 @@ button {
     cursor: pointer;
 
     position: absolute;
-    bottom: 5%;
-    right: 10%;
+    bottom: 5px;
+    right: 5px;;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
 }
@@ -33,11 +52,4 @@ button:hover {
     background-color: white;
     color: #25434D;
     border: 2px solid #25434D;
-}
-
-#mellem .billede {
-    margin: 50px;
-    object-position: center;
-    width: 70%;
-    height: 70%;
 }
