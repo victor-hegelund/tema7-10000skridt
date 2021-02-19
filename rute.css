@@ -19,7 +19,7 @@
 article {
     display: grid;
     grid-template-columns: 1fr 3fr;
-/*    grid-auto-rows: 1fr;*/
+    /*    grid-auto-rows: 1fr;*/
     grid-gap: 10px;
     margin: 20px;
 }
@@ -40,16 +40,17 @@ button {
     font-family: 'Big Shoulders Display', cursive;
 
     cursor: pointer;
+    float: right;
 
-    position: absolute;
-    bottom: 5px;
-    right: 5px;;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
 }
 
 button:hover {
     background-color: white;
     color: #25434D;
     border: 2px solid #25434D;
+}
+
+iframe {
+    width: 100%;
+    height: 480px;
 }
