@@ -11,9 +11,39 @@ img {
     width: 100%;
 }
 
-/*------header------*/
+/*------header og footer------*/
 
+footer {
+    justify-content: center;
+    height: 8vh;
+    background-color: white;
+}
 
+header {
+    height: 6vh;
+    background-color: white;
+}
+
+a {
+    font-family: 'Big Shoulders Display', cursive;
+    float: right;
+    font-size: 1rem;
+}
+
+a:link {
+    color: black;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+a:active {
+    color: black;
+    text-decoration: none;
+}
 
 /*------fonte------*/
 
