@@ -57,9 +57,10 @@ a:active {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
     font-family: 'Big Shoulders Display', cursive;
-    padding-bottom: 14px;
+    padding-bottom: 10px;
 }
 
 h1 {
