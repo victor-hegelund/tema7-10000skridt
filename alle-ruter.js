@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
             let klon = template.cloneNode(true).content;
             klon.querySelector(".the_img").src = imgUrl + rute.billede;
             klon.querySelector("h2").textContent = rute.navn
-            klon.querySelector(".skridt").textContent = rute.skridt;
+            klon.querySelector(".skridt").textContent = `${rute.skridt} skridt`;
             klon.querySelector(".placering").textContent = rute.placering;
             klon.querySelector("button").addEventListener("click", () => visDetaljer(rute))
             document.querySelector(".rute-list .content").appendChild(klon);
