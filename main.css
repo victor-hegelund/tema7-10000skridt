@@ -19,9 +19,9 @@ footer {
     padding: 30px 0px;
 }
 
-header nav {
+header {
     background-color: white;
-    padding: 15px 15px;
+    padding: 18px 18px;
 }
 
 header .header_right {
@@ -32,6 +32,7 @@ header .header_right {
 header a {
     font-family: 'Big Shoulders Display', cursive;
     font-size: 1rem;
+    padding-left: 15px;
 }
 
 a:link {
@@ -119,6 +120,6 @@ p {
     }
 
     header a {
-        font-size: 1.35rem;
+        font-size: 1.4rem;
     }
 }
