@@ -1,0 +1,43 @@
+.top-tekst {
+    background: #fff;
+    position: relative;
+    padding: 50px;
+    margin: -100px 30px 0 30px;
+    border: solid 1px #000;
+}
+
+button {
+    font-family: 'Big Shoulders Display', cursive;
+    background-color: #25434D;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid white;
+
+    padding: 10px 25px;
+    font-size: 1.1rem;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Big Shoulders Display', cursive;
+
+    cursor: pointer;
+
+    position: absolute;
+    bottom: 5%;
+    right: 10%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+button:hover {
+    background-color: white;
+    color: #25434D;
+    border: 2px solid #25434D;
+}
+
+#mellem .billede {
+    margin: 50px;
+    object-position: center;
+    width: 70%;
+    height: 70%;
+}

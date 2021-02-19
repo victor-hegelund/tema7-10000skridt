@@ -1,56 +1,172 @@
-/*-----sectioner-----*/
+/*-----section 1-----*/
 
 #indledning {
-    margin: 22px 15px;
+    margin: 35px 15px 60px 15px;
 }
 
 #indledning .left_col {
     padding-bottom: 10px;
 }
 
+/*-----section 2-----*/
+
 #knaptilruter {
-    margin: 22px 15px;
+    width: 100%;
+    background-color: #ABB5A1;
+    padding: 20px;
+    margin-bottom: 80px;
+}
+
+#knaptilruter .knaptilruter_indhold {
+    margin: 25px 15px 50px 15px;
 }
 
 #knaptilruter .text_col {
     padding-bottom: 10px;
 }
 
+#knaptilruter .img_col {
+    position: relative;
+}
+
+#knaptilruter img {
+    object-fit: cover;
+}
+
 #knaptilruter button {
-    border: 1px solid black;
-    background-color: Transparent;
-    color: black;
-    padding: 8px 25px;
+    border: 2px solid #25434D;
+    background-color: #25434D;
+    color: white;
+
+    padding: 15px 30px;
+    font-size: 1.1rem;
     text-align: center;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
+
+    cursor: pointer;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
 }
 
+#knaptilruter button:hover {
+    background-color: transparent;
+    color: #25434D;
+}
+
+
+/*-----section 3-----*/
+
 #community {
-    margin: 22px 15px;
+    margin: 25px 15px 80px 15px;
+
 }
 
 #community .text_col {
     padding-bottom: 10px;
 }
 
+#community .img_col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+}
+
+/*-----section 4-----*/
+
 #newsletter {
     width: 100%;
-    background-color: #BA9A80;
+    /*    background-color: #BA9A80;*/
+    background-color: #25434D;
     padding: 22px;
     margin: 0px;
+    color: white;
 }
 
 #newsletter .text_col {
-    padding-bottom: 10px;
+    padding-bottom: 15px;
 }
 
 #newsletter input {
     width: 100%;
-    height: 7vw;
+    height: 35px;
     font-family: 'Montserrat', sans-serif;
 }
 
-@media (min-width:700px) {}
+#newsletter .tilmeld .fuldenavn {
+    margin-bottom: 10px;
+}
 
-@media (min-width:950px) {}
+@media (min-width:700px) {
+
+    /*-----section 1-----*/
+
+    #indledning {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 15px;
+    }
+
+    /*-----section 4-----*/
+
+    #newsletter .tilmeld {
+
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+
+    #newsletter .tilmeld .fuldenavn,
+    .email {
+        margin: 0px;
+    }
+}
+
+@media (min-width:900px) {
+
+    /*-----section 1-----*/
+
+
+
+
+    /*-----section 2-----*/
+
+    #knaptilruter .knaptilruter_indhold {
+        max-width: 1100px;
+        margin: 25px auto 50px auto;
+    }
+
+
+    /*-----section 3-----*/
+
+
+    #community {
+        max-width: 1100px;
+        margin: 25px auto 80px auto;
+    }
+
+    #community .img_col {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
+    }
+
+    /*-----section 4-----*/
+
+    #newsletter .newsletter_indhold {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+}
+
+@media (min-width:1150px) {
+    #indledning {
+        max-width: 1100px;
+        margin: 70px auto 50px auto;
+    }
+}
