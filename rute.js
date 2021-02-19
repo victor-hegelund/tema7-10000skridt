@@ -27,6 +27,7 @@
      document.querySelector(".skridt").textContent = rute.skridt + " Antal";
      document.querySelector(".placering").textContent = rute.placering;
      document.querySelector(".bonus_info").textContent = rute.bonus_info;
+     document.querySelector("iframe").src = `https://www.google.com/maps/d/u/0/embed?mid=${rute.maps}`;
      document.querySelector("button").addEventListener("click", tilbage);
  }
 
