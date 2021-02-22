@@ -17,25 +17,51 @@ img {
 /*------header og footer------*/
 
 footer {
-    justify-content: center;
-    background-color: white;
-    padding: 30px 0px;
+    width: 100%;
+    background-color: #EADCC9;
+}
+
+footer img {
+    width: 80px;
+}
+
+footer .social_1 {
+    margin: auto;
+    width: 250px;
+    display: block;
+}
+
+footer p {
+    text-align: center;
+    font-size: 0.75rem;
+    margin-bottom: -10px;
+    padding-bottom: 10px;
+    margin-top: -10px;
 }
 
 header {
     background-color: white;
+    width: 100%;
     padding: 18px 18px;
 }
 
 header .header_right {
     text-align: end;
     letter-spacing: 1.1px;
+    margin-top: -8px;
+}
+
+header .header_left img {
+    width: 120px;
+    margin-bottom: -40px;
+    margin-left: -20px;
+    margin-top: -14px;
 }
 
 header a {
     font-family: 'Big Shoulders Display', cursive;
-    font-size: 1rem;
-    padding-left: 15px;
+    font-size: 1.2rem;
+    padding-left: 16px;
 }
 
 a:link {
@@ -60,7 +86,6 @@ h2,
 h3,
 h4 {
     font-family: 'Big Shoulders Display', cursive;
-    padding-bottom: 10px;
 }
 
 h1 {
