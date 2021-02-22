@@ -109,6 +109,17 @@ p {
     line-height: 1.5;
 }
 
+/*------top tekst - loop og single view------*/
+
+.top-tekst {
+        border: 3px solid #ABB5A1;
+/*    border: none;*/
+    width: 80%;
+    opacity: 0.95;
+    margin: -120px auto 50px auto;
+    padding: 35px;
+}
+
 @media (min-width:700px) {
     h1 {
         font-size: 1.75rem;
