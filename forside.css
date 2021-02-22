@@ -1,23 +1,25 @@
 /*-----section 1-----*/
 
 #indledning {
-    margin: 35px 15px 60px 15px;
+    margin: 35px 25px 60px 25px;
 }
 
 #indledning .left_col {
     padding-bottom: 10px;
 }
 
+/*
 #indledning img {
-    padding: 0 15px;
+    padding: 0 20px;
 }
+*/
 
 /*-----section 2-----*/
 
 #knaptilruter {
     width: 100%;
     background-color: #ABB5A1;
-    padding: 20px;
+    padding: 10px;
     margin-bottom: 80px;
 }
 
@@ -31,6 +33,12 @@
 
 #knaptilruter .img_col {
     position: relative;
+    width: 100%;
+    height: 55vh;
+    background-size: cover;
+    background-image: url(img/top.png);
+    background-position: 52% 10%;
+    max-width: none;
 }
 
 #knaptilruter img {
@@ -66,7 +74,7 @@
 /*-----section 3-----*/
 
 #community {
-    margin: 25px 15px 80px 15px;
+    margin: 25px 25px 80px 25px;
 
 }
 
