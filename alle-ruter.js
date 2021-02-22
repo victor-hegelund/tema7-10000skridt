@@ -24,11 +24,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function vis(ruter) {
         document.querySelector(".rute-list .content").textContent = "";
-        console.log("vis")
+        console.log("vis");
         ruter.forEach(rute => {
-            console.log("filterMin: " + filterMin)
-            console.log("filterMax: " + filterMax)
-            console.log("rute.skridt: " + rute.skridt)
+            //            console.log("filterMin: " + filterMin)
+            //            console.log("filterMax: " + filterMax)
+            //            console.log("rute.skridt: " + rute.skridt)
             if (rute.skridt >= filterMin && rute.skridt <= filterMax) {
                 let klon = template.cloneNode(true).content;
                 klon.querySelector(".the_img").src = imgUrl + rute.billede;
