@@ -35,6 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 klon.querySelector("h2").textContent = rute.navn
                 klon.querySelector(".skridt").textContent = `${rute.skridt} skridt`;
                 klon.querySelector(".placering").textContent = rute.placering;
+                klon.querySelector(".the_img").addEventListener("click", () => visDetaljer(rute))
                 klon.querySelector("button").addEventListener("click", () => visDetaljer(rute))
                 document.querySelector(".rute-list .content").appendChild(klon);
             }
