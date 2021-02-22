@@ -8,6 +8,10 @@
     padding-bottom: 10px;
 }
 
+#indledning img {
+    padding: 0 15px;
+}
+
 /*-----section 2-----*/
 
 #knaptilruter {
@@ -137,14 +141,7 @@
         margin: 25px auto 50px auto;
     }
 
-
     /*-----section 3-----*/
-
-
-    #community {
-        max-width: 1100px;
-        margin: 25px auto 80px auto;
-    }
 
     #community .img_col {
         display: grid;
@@ -164,5 +161,10 @@
     #indledning {
         max-width: 1100px;
         margin: 70px auto 50px auto;
+    }
+
+    #community {
+        max-width: 1100px;
+        margin: 25px auto 80px auto;
     }
 }

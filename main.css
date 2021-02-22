@@ -18,12 +18,17 @@ img {
 
 footer {
     width: 100%;
-    justify-content: center;
     background-color: #EADCC9;
 }
 
 footer img {
     width: 80px;
+}
+
+footer .social {
+    margin: auto;
+    width: 50%;
+    display: block;
 }
 
 header {
@@ -35,12 +40,21 @@ header {
 header .header_right {
     text-align: end;
     letter-spacing: 1.1px;
+    margin-top: -8px;
+    padding-top: -5px;
+}
+
+header .header_left img {
+    width: 120px;
+    margin-bottom: -40px;
+    margin-left: -20px;
+    margin-top: -14px;
 }
 
 header a {
     font-family: 'Big Shoulders Display', cursive;
-    font-size: 1rem;
-    padding-left: 15px;
+    font-size: 1.2rem;
+    padding-left: 16px;
 }
 
 a:link {
