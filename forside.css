@@ -80,6 +80,16 @@
     grid-gap: 15px;
 }
 
+#community .text_col a {
+    color: #25434D;
+    text-decoration: underline;
+}
+
+#community .text_col a:hover {
+    color: #25434D;
+    text-decoration: none;
+}
+
 /*-----section 4-----*/
 
 #newsletter {
@@ -115,7 +125,10 @@
 
     cursor: pointer;
 
-    color: gray;
+    display: block;
+    margin: auto;
+    justify-items: right;
+    margin-right: 0;
 }
 
 @media (min-width:750px) {
@@ -147,6 +160,10 @@
 @media (min-width:900px) {
     #newsletter input {
         width: 80%;
+    }
+
+    #newsletter button {
+        margin-top: -55px;
     }
 }
 
@@ -189,6 +206,6 @@
     }
 
     #newsletter input {
-        width: 60%;
+        width: 65%;
     }
 }
