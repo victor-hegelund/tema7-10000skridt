@@ -35,14 +35,14 @@ footer p {
     text-align: center;
     font-size: 0.75rem;
     margin-bottom: -10px;
-    padding-bottom: 10px;
+    padding-bottom: 15px;
     margin-top: -10px;
 }
 
 header {
     background-color: white;
     width: 100%;
-    padding: 18px 18px;
+    padding: 18px;
 }
 
 header .header_right {
@@ -53,7 +53,7 @@ header .header_right {
 
 header .header_left img {
     width: 120px;
-    margin-bottom: -40px;
+    margin-bottom: -35px;
     margin-left: -20px;
     margin-top: -14px;
 }
@@ -99,13 +99,13 @@ h2 {
 }
 
 h3 {
-    font-size: 1.3rem;
+    font-size: 1.33rem;
     letter-spacing: 1.05px;
 }
 
 p {
     font-family: 'Montserrat', sans-serif;
-    font-size: 0.85rem;
+    font-size: 0.88rem;
     line-height: 1.5;
 }
 
@@ -123,7 +123,7 @@ p {
     }
 
     p {
-        font-size: 0.9rem;
+        font-size: 0.95rem;
     }
 
     header a {
@@ -145,7 +145,7 @@ p {
     }
 
     p {
-        font-size: 1rem;
+        font-size: 1.05rem;
     }
 
     header a {
