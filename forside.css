@@ -84,7 +84,6 @@
 
 #newsletter {
     width: 100%;
-    /*    background-color: #BA9A80;*/
     background-color: #25434D;
     padding: 22px;
     margin: 0px;
@@ -97,11 +96,29 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+/*
 #newsletter .tilmeld .fuldenavn {
     margin-bottom: 10px;
 }
+*/
 
-@media (min-width:700px) {
+#newsletter button {
+    border: 2px solid #25434D;
+    background-color: white;
+    color: black;
+
+    padding: 8px 14px;
+    font-size: 0.85rem;
+    text-align: center;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+
+    cursor: pointer;
+
+    color: gray;
+}
+
+@media (min-width:750px) {
 
     /*-----section 1-----*/
 
@@ -111,15 +128,15 @@
         grid-gap: 15px;
     }
 
-    /*-----section 4-----*/
-
-    #newsletter .tilmeld {
-
-
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 10px;
+    #indledning .left_col {
+        grid-column: 1/2;
     }
+
+    #indledning .right_col {
+        grid-column: 2/3;
+    }
+
+    /*-----section 4-----*/
 
     #newsletter .tilmeld .fuldenavn,
     .email {
@@ -128,20 +145,30 @@
 }
 
 @media (min-width:900px) {
+    #newsletter input {
+        width: 80%;
+    }
+}
+
+@media (min-width:1050px) {
 
     /*-----section 1-----*/
 
-
+    #indledning {
+        max-width: 1000px;
+        margin: 70px auto 50px auto;
+    }
 
 
     /*-----section 2-----*/
 
     #knaptilruter .knaptilruter_indhold {
-        max-width: 1100px;
+        max-width: 1000px;
         margin: 25px auto 50px auto;
     }
 
     /*-----section 3-----*/
+
 
     #community .img_col {
         display: grid;
@@ -149,22 +176,19 @@
         grid-gap: 20px;
     }
 
+    #community {
+        max-width: 1000px;
+        margin: 25px auto 80px auto;
+    }
+
     /*-----section 4-----*/
 
     #newsletter .newsletter_indhold {
-        margin-left: 100px;
-        margin-right: 100px;
-    }
-}
-
-@media (min-width:1150px) {
-    #indledning {
-        max-width: 1100px;
-        margin: 70px auto 50px auto;
+        max-width: 1000px;
+        margin: 25px auto 50px auto;
     }
 
-    #community {
-        max-width: 1100px;
-        margin: 25px auto 80px auto;
+    #newsletter input {
+        width: 60%;
     }
 }
