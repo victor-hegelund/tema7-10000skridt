@@ -128,30 +128,33 @@
 
 
     <script>
-        // Get the modal
+        // Henter pop-up vinduet
         var vindue = document.getElementById("popup");
 
-        // Get the button that opens the modal
+        // Knappen der åbner pop-up vinduet
         var button = document.getElementById("submit");
 
-        // Get the <span> element that closes the modal
+        // Tilføjelse af krydset, der kan lukke vinduet
         var span = document.getElementsByClassName("close")[0];
 
-        // When the user clicks the button, open the modal
+        // Når man klikker på knappen, åbner vinduet
         button.onclick = function() {
             vindue.style.display = "block";
         }
 
-        // When the user clicks on <span> (x), close the modal
+        // Når man klikker på krydset lukker vinduet
         span.onclick = function() {
             vindue.style.display = "none";
         }
 
-        // When the user clicks anywhere outside of the modal, close it
+        // Når man klikker hvilket som helst sted udenfor viduet lukker pop-upen
         window.onclick = function(event) {
             if (event.target == vindue) {
                 vindue.style.display = "none";
             }
         }
+
     </script>
-</body></html>
+</body>
+
+</html>
