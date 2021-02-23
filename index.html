@@ -103,18 +103,14 @@
                 <div class="boks_content">
                     <div class="luk_knap">
                         <span class="close">&times;</span>
-                    </div>
-                    <div class="tekst">
                         <h3>Tak fordi du vil være en del af universet</h3>
-                        <p>Du skulle gerne modtage en mail om noget tid med bekræftelse. God dag!</p>
+                        <p>Du vil om noget tid modtage en mail.</p>
                     </div>
                 </div>
             </div>
 
         </section>
     </main>
-
-
 
     <footer id="my_footer">
         <div class="social_1">
@@ -126,35 +122,7 @@
         <p>E-mail: gaamedos@10000skridt.dk | © 2021 </p>
     </footer>
 
-
-    <script>
-        // Henter pop-up vinduet
-        var vindue = document.getElementById("popup");
-
-        // Knappen der åbner pop-up vinduet
-        var button = document.getElementById("submit");
-
-        // Tilføjelse af krydset, der kan lukke vinduet
-        var span = document.getElementsByClassName("close")[0];
-
-        // Når man klikker på knappen, åbner vinduet
-        button.onclick = function() {
-            vindue.style.display = "block";
-        }
-
-        // Når man klikker på krydset lukker vinduet
-        span.onclick = function() {
-            vindue.style.display = "none";
-        }
-
-        // Når man klikker hvilket som helst sted udenfor viduet lukker pop-upen
-        window.onclick = function(event) {
-            if (event.target == vindue) {
-                vindue.style.display = "none";
-            }
-        }
-
-    </script>
+    <script src="forside.js"></script>
 </body>
 
 </html>
