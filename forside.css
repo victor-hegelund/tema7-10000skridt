@@ -90,6 +90,15 @@
     text-decoration: none;
 }
 
+#community .text_col .text_grid {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+}
+
+#community .text_col img {
+    width: 120px;
+}
+
 /*-----section 4-----*/
 
 #newsletter {
@@ -146,7 +155,7 @@
     margin: auto;
     padding: 20px;
     /*    border: 2px solid #ABB5A1;*/
-    width: 70%;
+    width: 66%;
 }
 
 #newsletter .close {
@@ -163,6 +172,10 @@
 
 #popup {
     color: black;
+}
+
+#popup span {
+    margin-top: -30px;
 }
 
 @media (min-width:750px) {
@@ -183,10 +196,14 @@
         grid-column: 2/3;
     }
 
+    #indledning img {
+        padding: 10px;
+    }
+
     /*-----section 3-----*/
 
     #knaptilruter button {
-        font-size: 1.1rem;
+        font-size: 1.3rem;
     }
 
     /*-----section 4-----*/
