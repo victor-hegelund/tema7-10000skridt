@@ -1,3 +1,7 @@
+nav a:hover {
+    color: #25434D;
+}
+
 /*-----section 1-----*/
 
 #indledning {
@@ -137,10 +141,11 @@
 
 /*-----pop-up-----*/
 
-#newsletter .boks_vises {
+/*clas til pop-up vinduet, som vises når man trykker på indsend knap*/
+.boks_vises {
     display: none;
     position: fixed;
-    z-index: 1;
+    z-index: 10;
     padding-top: 250px;
     left: 0;
     top: 0;
@@ -151,15 +156,17 @@
     background-color: rgba(0, 0, 0, 0.4);
 }
 
-#newsletter .boks_content {
-    background-color: #fefefe;
+/*pop-up vinduets indhold, størrelse og styling*/
+#popup .boks_content {
+    background-color: #ffffff;
     margin: auto;
     padding: 20px;
-    /*    border: 2px solid #ABB5A1;*/
+    border: 3px solid #ABB5A1;
     width: 66%;
 }
 
-#newsletter .close {
+/*pop-up vinduets knap til at kunne lukke*/
+#popup .close {
     color: black;
     float: right;
     font-size: 28px;
@@ -167,16 +174,14 @@
     cursor: pointer;
 }
 
-#newsletter .boks_content .tekst {
-    z-index: 2;
-}
-
+/*farve til font i pop-up vindue*/
 #popup {
     color: black;
 }
 
+/*krydset i pop-up vindue rykket op, så den er i hjørnet af boksen*/
 #popup span {
-    margin-top: -30px;
+    margin-top: -10px;
 }
 
 @media (min-width:750px) {
@@ -203,9 +208,6 @@
 
     /*-----section 3-----*/
 
-    #knaptilruter button {
-        font-size: 1.3rem;
-    }
 
     /*-----section 4-----*/
 
@@ -213,6 +215,11 @@
     .email {
         margin: 0px;
     }
+
+    #knaptilruter button {
+        font-size: 1.3rem;
+    }
+
 }
 
 @media (min-width:900px) {
@@ -241,6 +248,10 @@
         margin: 25px auto 50px auto;
     }
 
+    #knaptilruter button {
+        font-size: 1.4rem;
+    }
+
     /*-----section 3-----*/
 
     #community .img_col {
@@ -253,6 +264,8 @@
         max-width: 950px;
         margin: 25px auto 100px auto;
     }
+
+
 
     /*-----section 4-----*/
 
