@@ -45,10 +45,10 @@
     color: white;
 
     padding: 14px 30px;
-    font-size: 0.95rem;
+    font-size: 1.1rem;
     text-align: center;
     text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Big Shoulders Display', cursive;
 
     cursor: pointer;
 
@@ -125,6 +125,46 @@
     margin-right: 0;
 }
 
+/*-----pop-up-----*/
+
+#newsletter .boks_vises {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 250px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+#newsletter .boks_content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    /*    border: 2px solid #ABB5A1;*/
+    width: 70%;
+}
+
+#newsletter .close {
+    color: black;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#newsletter .boks_content .tekst {
+    z-index: 2;
+}
+
+#popup {
+    color: black;
+}
+
 @media (min-width:750px) {
 
     /*-----section 1-----*/
@@ -172,14 +212,14 @@
     /*-----section 1-----*/
 
     #indledning {
-        max-width: 1000px;
+        max-width: 950px;
         margin: 70px auto 50px auto;
     }
 
     /*-----section 2-----*/
 
     #knaptilruter .knaptilruter_indhold {
-        max-width: 1000px;
+        max-width: 950px;
         margin: 25px auto 50px auto;
     }
 
@@ -192,14 +232,14 @@
     }
 
     #community {
-        max-width: 1000px;
-        margin: 25px auto 80px auto;
+        max-width: 950px;
+        margin: 25px auto 100px auto;
     }
 
     /*-----section 4-----*/
 
     #newsletter .newsletter_indhold {
-        max-width: 1000px;
+        max-width: 950px;
         margin: 25px auto 50px auto;
     }
 
