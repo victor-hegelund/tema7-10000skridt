@@ -7,10 +7,14 @@ main {
     margin: 0 auto;
 }
 
+/* ---- Styling for at give lidt luft imellem tekst og billeder -----  */
+
 h1,
 h2 {
     margin-bottom: 50px;
 }
+
+/* ---- Opsætning af grid i mellem section -----  */
 
 article {
     display: grid;
@@ -20,14 +24,20 @@ article {
 
 }
 
+/* ---- Placering i grid (mellem section) i højre side - icon logo og den indhentet tekst af for ruterne -----  */
+
 .information p,
 .information img {
     align-self: center;
 }
 
+/* ---- Styling af tilbage knap -----  */
+
 button {
     float: right;
 }
+
+/* ---- ????? -----  */
 
 iframe {
     width: 100%;
@@ -35,19 +45,21 @@ iframe {
     border: none;
 }
 
+/* ---- Gør font til fed -----  */
+
 .bold {
     font-weight: 700;
     color: red;
 }
+
+/* ---- Styling af section i bunden -----  */
 
 #bund {
     padding-top: 70px;
 }
 
 
-
-
-
+/* ---- Styling når man går op i skærmstørrelse -----  */
 
 @media (min-width:900px) {
 
