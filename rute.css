@@ -2,6 +2,11 @@ main {
     margin: 25px 20px 50px 20px;
 }
 
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .top-tekst {
     background: #fff;
     position: relative;
@@ -12,17 +17,25 @@ main {
 
 article {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 3fr;
     /*    grid-auto-rows: 1fr;*/
     grid-gap: 10px;
 
 }
 
+.information p,
+.information img {
+    align-self: center;
+}
+
+/*
 article img {
     height: 35%;
     width: 35%;
 }
+*/
 
+/*
 .skridt_ img,
 h4 {
     display: inline-block;
@@ -37,6 +50,7 @@ h4 {
 h4 {
     display: inline-block;
 }
+*/
 
 button {
     font-family: 'Big Shoulders Display', cursive;
