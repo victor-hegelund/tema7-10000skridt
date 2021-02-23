@@ -16,8 +16,6 @@ const options = {
 
 document.addEventListener("DOMContentLoaded", () => {
     hentdata();
-    //    setLeftValue();
-    //    setRightValue();
 });
 
 
@@ -26,6 +24,8 @@ async function hentdata() {
     const result = await fetch(url, options);
     ruter = await result.json();
     vis();
+    setLeftValue();
+    setRightValue();
 }
 
 function vis() {
@@ -36,7 +36,7 @@ function vis() {
     console.log("filterMax: " + filterMax);
 
     ruter.forEach(rute => {
-        if (rute.skridt >= filterMin && rute.skridt <= filterMax) {
+        if (rute.skridt >= filterMin && rute.skridt <= filterMax || rute.skridt >= filterMin && filterMax == 10000) {
             let klon = template.cloneNode(true).content;
             klon.querySelector(".the_img").src = imgUrl + rute.billede;
             klon.querySelector("h2").textContent = rute.navn
@@ -93,7 +93,11 @@ function setRightValue() {
 
     _this.value = Math.max(parseInt(_this.value), parseInt(inputLeft.value) + 1);
 
-    document.querySelector("#output-right").textContent = _this.value;
+    if (_this.value == 10000) {
+        document.querySelector("#output-right").textContent = _this.value + "+";
+    } else {
+        document.querySelector("#output-right").textContent = _this.value;
+    }
 
     var percent = ((_this.value - min) / (max - min)) * 100;
 

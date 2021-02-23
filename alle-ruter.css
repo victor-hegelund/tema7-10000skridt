@@ -11,12 +11,18 @@
     grid-gap: 20px;
 }
 
+article {
+    background: red;
+    height: 100%;
+}
+
 .article-tekst {
     background-color: #fff;
-    position: relative;
     margin: -50px 10px 0 10px;
-    border: 1px solid #000;
-    padding: 5px 10px
+    border: 3px solid #ABB5A1;
+    opacity: 0.85;
+    padding: 5px 10px;
+    height: 100%;
 }
 
 .article-tekst h2 {
@@ -25,6 +31,10 @@
 
 .article-tekst p {
     margin-top: 0;
+}
+
+article button {
+    justify-self: flex-end;
 }
 
 
@@ -40,7 +50,6 @@ button {
     font-family: 'Big Shoulders Display', cursive;
     cursor: pointer;
     width: 100%;
-
 }
 
 button:hover {
@@ -55,15 +64,18 @@ button:hover {
 
 
 
-
-
-
 .middle {
-    position: relative;
-    width: 50%;
-    max-width: 500px;
-    margin-bottom: 50px;
+    max-width: 1000px;
     margin: 0 auto;
+
+}
+
+.middle-content {
+    position: relative;
+    width: 100%;
+    margin-bottom: 50px;
+    margin: 0 20px 0 20px;
+
 }
 
 .multi-range-slider {
