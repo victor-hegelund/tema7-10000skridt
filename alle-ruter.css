@@ -12,17 +12,21 @@
 }
 
 article {
-    background: red;
-    height: 100%;
+    display: grid;
+    grid-auto-rows: minmax(50px, 1fr);
 }
 
 .article-tekst {
+    grid-area: 2 / 1;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-self: stretch;
     background-color: #fff;
     margin: -50px 10px 0 10px;
     border: 3px solid #ABB5A1;
     opacity: 0.85;
     padding: 5px 10px;
-    height: 100%;
 }
 
 .article-tekst h2 {
@@ -39,26 +43,12 @@ article button {
 
 
 button {
-    font-family: 'Big Shoulders Display', cursive;
-    background-color: #25434D;
-    color: white;
-    border: 2px solid white;
-    padding: 10px 25px;
-    font-size: 1.1rem;
-    text-align: center;
-    text-decoration: none;
-    font-family: 'Big Shoulders Display', cursive;
-    cursor: pointer;
     width: 100%;
 }
 
-button:hover {
-    background-color: white;
-    color: #25434D;
-    border: 2px solid #25434D;
-}
 
 .the_img {
+    grid-area: 1 / 1;
     cursor: pointer;
 }
 
