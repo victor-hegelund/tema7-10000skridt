@@ -114,12 +114,25 @@ p {
 /*------top tekst - loop og single view------*/
 
 .top-tekst {
+    margin: -120px 20px 0 20px;
+
+    /*
+    padding-right: 20px;
+    padding-left: 20px;
+*/
+}
+
+.top-tekst-content {
+    max-width: 1000px;
+
+    background-color: white;
+
     border: 3px solid #ABB5A1;
-    /*    border: none;*/
-    width: 80%;
-    opacity: 0.95;
-    margin: -120px auto 50px auto;
-    padding: 35px;
+
+    margin: 0 auto 0 auto;
+
+    opacity: 0.9;
+    padding: 30px;
 }
 
 @media (min-width:700px) {

@@ -1,15 +1,7 @@
-.top-tekst {
-    background: #fff;
-    position: relative;
-    padding: 50px;
-    margin: -100px 10px 50px 10px;
-    border: solid 1px #000;
-}
-
 .rute-list {}
 
 .content {
-    max-width: 1200px;
+    max-width: 1000px;
     padding-left: 20px;
     padding-right: 20px;
     margin: 0 auto;
