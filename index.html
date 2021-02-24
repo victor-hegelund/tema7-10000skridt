@@ -35,14 +35,16 @@
         </div>
     </header>
 
-
-    <video class="top-img top-video" autoplay muted loop playsinline>
-        <source src="http://sunoer.dk/kea/skridt.MP4">
-    </video>
-
+    <!--splash-video-->
+    <div class="splash">
+        <video class="top-img top-video" autoplay muted loop playsinline>
+            <source src="http://sunoer.dk/kea/skridt.MP4">
+        </video>
+        <a href="alle-ruter.html" class="knap_udforsk">Udforsk alle ruter</a>
+    </div>
 
     <main>
-        <!--første section med indledning til sitet-->
+        <!--SECTION 1 med indledning til sitet, som er delt ind i left_col og right_col til grid på desktop-->
         <section id="indledning">
             <div class="left_col">
                 <h1>Din vandrende rejse starter her</h1>
@@ -57,7 +59,7 @@
             </div>
         </section>
 
-        <!--anden section der kan føre en videre til alle ruter-->
+        <!--SECTION 2 der kan føre en videre til alle ruter. Indholder tekst og img div-->
         <section id="knaptilruter">
             <div class="knaptilruter_indhold">
                 <div class="text_col">
@@ -65,14 +67,14 @@
                     <p>Alle vores ruter har angivet længde i antal skridt. Du kan altså let se dig igennem hvilken rute, der passer netop din målsætning. Lige nu har vi primært ruter i og omkring København, men vores udvalg af ruter udvides hele tiden. Har du en favorit rute, du vil dele med os, så kontakt os endelig på mail.</p>
                 </div>
                 <div class="img_col">
-                    <a href="alle-ruter.html"><img src="img/top.png" alt="nyhavn" class="top-img"></a>
+                    <a href="alle-ruter.html"><img src="img/top.jpg" alt="nyhavn" class="top-img"></a>
                     <a href="alle-ruter.html" class="knap_udforsk">Udforsk alle ruter</a>
 
                 </div>
             </div>
         </section>
 
-        <!--tredje section som skaber det her community via instagram-->
+        <!--SECTION 3 som skaber det her community via instagram. Delt op i tekst og img div til grid-->
         <section id="community">
             <div class="text_col">
                 <h2>Må vi gå med dig?</h2>
@@ -91,14 +93,14 @@
             </div>
         </section>
 
-        <!--fjerde section der giver mulighed for at skrive op til nyhedsbrev-->
+        <!--SECTION 4 der giver mulighed for at skrive op til nyhedsbrev-->
         <section id="newsletter">
             <div class="newsletter_indhold">
                 <div class="text_col">
                     <h3>Få de nye ruter før din nabo</h3>
                     <p>Tilmeld dig vores nyhedsbrev, og bliv first-walker på nye ruter. Som noget ganske særligt afholdes der hver måned en konkurrence for vores nyhedsbrevs-subwalkers - altid med lækre præmier til din næste gåtur.</p>
                 </div>
-                <!--tilmedlings blanket-->
+                <!--tilmedlings blanketten med indput og indsend knap-->
                 <div class="tilmeld">
                     <div class="fuldenavn">
                         <p>
@@ -117,7 +119,7 @@
                     </div>
                 </div>
             </div>
-            <!--pop-up vindue når du har registreret navn og mail-->
+            <!--POP-UP vindue når du har registreret navn og mail og trykket på indsend knap-->
             <div id="popup" class="boks_vises">
                 <div class="boks_content">
                     <div class="luk_knap">
@@ -134,6 +136,7 @@
         </section>
     </main>
 
+    <!--FOOTER med sociale medier-->
     <footer id="my_footer">
         <div class="social_1">
             <a href="https://www.instagram.com/explore/tags/10000skridt/" target="_blank">
@@ -145,6 +148,4 @@
     </footer>
 
     <script src="forside.js"></script>
-</body>
-
-</html>
+</body></html>

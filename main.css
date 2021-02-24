@@ -16,6 +16,7 @@ img {
     width: 100%;
 }
 
+/*--Styling af knapperne på siden--*/
 button,
 .knap_udforsk {
     font-family: 'Big Shoulders Display', cursive;
@@ -36,7 +37,7 @@ button:hover {
     border: 2px solid #25434D;
 }
 
-/*------header og footer------*/
+/*--FOOTER: størrelse og styling af indhold--*/
 
 footer {
     width: 100%;
@@ -61,6 +62,9 @@ footer p {
     margin-top: -10px;
 }
 
+/*--HEADER--*/
+
+/*--header position, samt styling med gradient--*/
 header {
     background-image: linear-gradient(to top, rgba(255, 255, 255, 0.58), rgba(255, 255, 255, 1));
     width: 100%;
@@ -70,6 +74,7 @@ header {
     padding: 0 20px 0 20px;
 }
 
+/*--grid i header--*/
 .header-content {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -90,9 +95,10 @@ header .header_right {
     margin: auto 0;
 }
 
+/*--Headera href stylet--*/
 header nav a {
     font-family: 'Big Shoulders Display', cursive;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     padding-left: 16px;
     text-decoration: none;
     color: #000;
@@ -112,19 +118,19 @@ header .header-aktiv {
     text-decoration: underline;
 }
 
-/*--link stylet med farve og understeges--*/
+/*--Link stylet med farve og understeges--*/
 .link {
     color: #25434D;
     text-decoration: underline;
 }
 
-/*--link: ved hover forsvinder linjen under--*/
+/*--Link: ved hover forsvinder linjen under--*/
 .link:hover {
     color: #25434D;
     text-decoration: none;
 }
 
-/*--fontstørrelser bestemt--*/
+/*--FONTSTØRRELSER og FONT-FAMILY--*/
 
 h1,
 h2,
@@ -156,7 +162,7 @@ output {
     word-spacing: 1px;
 }
 
-/*------top tekst - loop og single view------*/
+/*------TOP TEKST - loop og single view------*/
 
 .top-tekst {
     margin: -100px 20px 0 20px;
@@ -201,17 +207,17 @@ output {
         font-size: 0.95rem;
     }
 
-    header a {
-        font-size: 1.2rem;
+    header nav a {
+        font-size: 1.4rem;
     }
 
     /*--Header gradient mere gennemsigtig--*/
     header {
-        background-image: linear-gradient(to top, rgba(255, 255, 255, 0.13), rgba(255, 255, 255, 1));
+        background-image: linear-gradient(to top, rgba(255, 255, 255, 0.21), rgba(255, 255, 255, 1));
     }
 }
 
-/*--Media på 900px: fontstørrelser bestemt--*/
+/*--Media på 900px: fontstørrelser bestemt for denne skærmstørrelse--*/
 @media (min-width:900px) {
     h1 {
         font-size: 2rem;
@@ -229,7 +235,7 @@ output {
         font-size: 1.1rem;
     }
 
-    header a {
-        font-size: 1.4rem;
+    header nav a {
+        font-size: 1.5rem;
     }
 }
