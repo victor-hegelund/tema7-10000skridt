@@ -174,7 +174,7 @@ output {
     min-height: 400px;
     object-fit: cover;
     object-position: center center;
-    min-width: 100%;
+    width: 100%;
 }
 
 @media (min-width:700px) {

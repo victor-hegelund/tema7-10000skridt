@@ -145,7 +145,7 @@
 
 /*-----pop-up-----*/
 
-/*clas til pop-up vinduet, som vises når man trykker på indsend knap*/
+/*--Class til pop-up vinduet, som vises når man trykker på indsend knap--*/
 .boks_vises {
     display: none;
     position: fixed;
@@ -160,7 +160,7 @@
     background-color: rgba(0, 0, 0, 0.4);
 }
 
-/*pop-up vinduets indhold, størrelse og styling*/
+/*--Pop-up vinduets indhold, størrelse og styling--*/
 #popup .boks_content {
     background-color: #ffffff;
     margin: auto;
@@ -169,7 +169,7 @@
     width: 66%;
 }
 
-/*pop-up vinduets knap til at kunne lukke*/
+/*--Pop-up vinduets knap til at kunne lukke--*/
 #popup .close {
     color: black;
     float: right;
@@ -178,7 +178,7 @@
     cursor: pointer;
 }
 
-/*farve til font i pop-up vindue*/
+/*--Farve til font i pop-up vindue--*/
 #popup {
     color: black;
 }
@@ -188,13 +188,15 @@
     margin-top: -10px;
 }
 
+/*hilsen teamet i pop-up i kursiv*/
 .hilsener {
     font-style: italic;
 }
 
+/*--Media ved 750px--*/
 @media (min-width:750px) {
 
-    /*-----section 1-----*/
+    /*--SECTION 1: grid i to kolonner--*/
 
     #indledning {
         display: grid;
@@ -202,6 +204,7 @@
         grid-gap: 25px;
     }
 
+    /*--placering af elementer i grid--*/
     #indledning .left_col {
         grid-column: 1/2;
     }
@@ -214,20 +217,16 @@
         padding: 10px;
     }
 
-    /*-----section 3-----*/
-
-
-    /*-----section 4-----*/
+    /*--SECTION 4--*/
 
     #newsletter .tilmeld .fuldenavn,
     .email {
         margin: 0px;
     }
 
-    #knaptilruter button {
+    #knaptilruter .knap_udforsk {
         font-size: 1.3rem;
     }
-
 }
 
 @media (min-width:900px) {
