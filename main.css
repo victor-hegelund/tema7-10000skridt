@@ -103,7 +103,7 @@ header a:link {
 
 header a:visited {
     color: black;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 header a:hover {
@@ -113,11 +113,24 @@ header a:hover {
 
 header a:active {
     color: black;
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 .header-aktiv {
     text-decoration: underline;
+    color: red;
+}
+
+/*--link stylet med farve og understeges--*/
+.link a {
+    color: #25434D;
+    text-decoration: underline;
+}
+
+/*--link: ved hover forsvinder linjen under--*/
+.link a:hover {
+    color: #25434D;
+    text-decoration: none;
 }
 
 
