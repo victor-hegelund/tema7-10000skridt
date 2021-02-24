@@ -122,10 +122,10 @@
     color: black;
 
     padding: 8px 14px;
-    font-size: 0.84rem;
+    font-size: 0.95rem;
     text-align: center;
     text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Big Shoulders Display', cursive;
 
     cursor: pointer;
 
@@ -225,6 +225,7 @@
 
     #newsletter button {
         margin-top: -55px;
+        font-size: 1.1rem;
     }
 }
 
