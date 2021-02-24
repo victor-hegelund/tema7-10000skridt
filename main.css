@@ -2,6 +2,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
 * {
     box-sizing: border-box;
 }
@@ -37,6 +39,7 @@ button:hover {
 
 footer {
     width: 100%;
+    background-color: #ABB5A1;
 }
 
 footer img {
@@ -113,16 +116,6 @@ a:hover {
     text-decoration: none;
 }
 
-#video {
-    position: relative;
-    top: 1vw;
-    z-index: -1;
-    min-width: 100%;
-    height: 30vw;
-    object-fit: cover;
-
-}
-
 
 /*------fonte------*/
 
@@ -179,6 +172,7 @@ output {
     min-height: 400px;
     object-fit: cover;
     object-position: center center;
+    min-width: 100%;
 }
 
 @media (min-width:700px) {

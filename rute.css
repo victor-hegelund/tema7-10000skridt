@@ -48,8 +48,8 @@ iframe {
 /* ---- Gør font til fed -----  */
 
 .bold {
-    font-weight: 700;
-    color: red;
+    font-weight: bold;
+
 }
 
 /* ---- Styling af section i bunden -----  */
