@@ -109,6 +109,11 @@ a:active {
     text-decoration: none;
 }
 
+a:hover {
+    color: #25434D;
+    text-decoration: none;
+}
+
 #video {
     position: relative;
     top: 1vw;
