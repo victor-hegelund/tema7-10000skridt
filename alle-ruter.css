@@ -1,32 +1,31 @@
-.rute-list {}
+.rute-list {
+    margin: 0 20px 0 20px;
+}
 
 .content {
     max-width: 1000px;
-    padding-left: 20px;
-    padding-right: 20px;
     margin: 0 auto;
-
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    grid-gap: 20px;
+    grid-column-gap: 20px;
+    grid-row-gap: 40px;
 }
 
 article {
     display: grid;
-    grid-auto-rows: minmax(50px, 1fr);
+    grid-auto-rows: minmax(0px, 0.9fr);
 }
 
 .article-tekst {
     grid-area: 2 / 1;
     display: flex;
     flex-direction: column;
-    align-content: space-between;
-    justify-self: stretch;
+    justify-content: space-between;
     background-color: #fff;
-    margin: -50px 10px 0 10px;
-    border: 3px solid #ABB5A1;
     opacity: 0.85;
+    margin: -50px 10px 0 10px;
     padding: 5px 10px;
+    border: 3px solid #ABB5A1;
 }
 
 .article-tekst h2 {
@@ -41,35 +40,29 @@ article button {
     justify-self: flex-end;
 }
 
-
 button {
     width: 100%;
 }
-
 
 .the_img {
     grid-area: 1 / 1;
     cursor: pointer;
 }
 
-
-
 .middle {
-    max-width: 1000px;
-    margin: 0 auto;
-
+    margin: 0 20px 50px 20px;
 }
 
 .middle-content {
+    max-width: 1000px;
+    margin: 0 auto;
     position: relative;
-    width: 100%;
-    margin-bottom: 50px;
-    margin: 0 20px 0 20px;
 
 }
 
 .multi-range-slider {
-    margin: 50px 0;
+    margin: 15px 0 0 0;
+    max-width: 1000px;
 }
 
 .outputs {
