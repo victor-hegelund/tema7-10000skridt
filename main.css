@@ -144,9 +144,10 @@ h3 {
     letter-spacing: 1.05px;
 }
 
-p {
+p,
+output {
     font-family: 'Montserrat', sans-serif;
-    font-size: 0.88rem;
+    output font-size: 0.88rem;
     line-height: 1.5;
 }
 
