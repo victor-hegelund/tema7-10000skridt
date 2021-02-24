@@ -62,7 +62,7 @@ footer p {
 }
 
 header {
-    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 1));
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.58), rgba(255, 255, 255, 1));
     width: 100%;
     height: 70px;
     position: fixed;
@@ -73,7 +73,6 @@ header {
 .header-content {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -97,28 +96,32 @@ header .header_right a {
     padding-left: 16px;
 }
 
-a:link {
+header a:link {
     color: black;
     text-decoration: none;
 }
 
-a:visited {
+header a:visited {
     color: black;
     text-decoration: none;
 }
 
-a:active {
-    color: black;
-    text-decoration: none;
-}
-
-a:hover {
+header a:hover {
     color: #25434D;
     text-decoration: none;
 }
 
+header a:active {
+    color: black;
+    text-decoration: none;
+}
 
-/*------fonte------*/
+.header-aktiv {
+    text-decoration: underline;
+}
+
+
+/*--fontstørrelser bestemt--*/
 
 h1,
 h2,
@@ -177,6 +180,7 @@ output {
     width: 100%;
 }
 
+/*--Media på 700px: fontstørrelser bestemt--*/
 @media (min-width:700px) {
     h1 {
         font-size: 1.75rem;
@@ -197,8 +201,14 @@ output {
     header a {
         font-size: 1.2rem;
     }
+
+    /*--Header gradient mere gennemsigtig--*/
+    header {
+        background-image: linear-gradient(to top, rgba(255, 255, 255, 0.13), rgba(255, 255, 255, 1));
+    }
 }
 
+/*--Media på 900px: fontstørrelser bestemt--*/
 @media (min-width:900px) {
     h1 {
         font-size: 2rem;
