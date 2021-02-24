@@ -1,4 +1,4 @@
-// Kodening af js
+// Oprettelse af globale variabler - const og let
 
 const urlParams = new URLSearchParams(window.location.search);
 const id = urlParams.get("id");
@@ -8,10 +8,14 @@ let rute;
 
 const myHeaders = {
 
-    "x-apikey": "602e73575ad3610fb5bb6331"
+    "x-apikey": "602e73575ad3610fb5bb6331";
 }
 
+// Den lytter på at dommen er loaded
+
 document.addEventListener("DOMContentLoaded", loadJSON)
+
+// Når dommen er loaded bliver JSON hentet ind fra den enkelte rute på baggrund af ID`et i url
 
 async function loadJSON() {
     const JSONData = await fetch(`https://titusinde-2763.restdb.io/rest/ruter/${id}`, {
@@ -22,7 +26,7 @@ async function loadJSON() {
     visRuter(rute);
 }
 
-// Henter alle oplysningerne om de forskellige ruter ind fra JSON, samt henter maps ind + lytter til klik på tilbageknap
+// viser oplysningerne fra JSON om den enkelte rute + lytter til klik på tilbageknap
 
 function visRuter() {
     document.querySelector(".navn").textContent = rute.navn;
