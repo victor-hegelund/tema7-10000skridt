@@ -122,13 +122,13 @@ header a:active {
 }
 
 /*--link stylet med farve og understeges--*/
-.link a {
+.link {
     color: #25434D;
     text-decoration: underline;
 }
 
 /*--link: ved hover forsvinder linjen under--*/
-.link a:hover {
+.link:hover {
     color: #25434D;
     text-decoration: none;
 }
