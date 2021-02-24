@@ -16,7 +16,8 @@ img {
     width: 100%;
 }
 
-button {
+button,
+.knap_udforsk {
     font-family: 'Big Shoulders Display', cursive;
     background-color: #25434D;
     color: white;
