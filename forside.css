@@ -180,6 +180,10 @@
     margin-top: -10px;
 }
 
+.hilsener {
+    font-style: italic;
+}
+
 @media (min-width:750px) {
 
     /*-----section 1-----*/
