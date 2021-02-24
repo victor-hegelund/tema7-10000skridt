@@ -85,18 +85,6 @@
     grid-gap: 15px;
 }
 
-/*--#10000skridt linket stylet med farve og understeges--*/
-#community .text_col a {
-    color: #25434D;
-    text-decoration: underline;
-}
-
-/*--#10000skridt linket: ved hover forsvinder linjen under--*/
-#community .text_col a:hover {
-    color: #25434D;
-    text-decoration: none;
-}
-
 /*--grid af text kolonnen, teksten fylder 5fr og billeder fylder 1fr--*/
 #community .text_col .text_grid {
     display: grid;
