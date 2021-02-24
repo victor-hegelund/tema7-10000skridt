@@ -146,6 +146,7 @@ output {
     font-family: 'Montserrat', sans-serif;
     output font-size: 0.88rem;
     line-height: 1.5;
+    word-spacing: 1px;
 }
 
 /*------top tekst - loop og single view------*/
