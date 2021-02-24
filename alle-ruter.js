@@ -1,3 +1,4 @@
+// Oprettelse af globale variabler - const og let
 const template = document.querySelector("template");
 
 const url = "https://titusinde-2763.restdb.io/rest/ruter";
@@ -14,11 +15,12 @@ const options = {
     }
 };
 
+// Lytter på om dommen er loaded
 document.addEventListener("DOMContentLoaded", () => {
     hentdata();
 });
 
-
+// Når dommen er loaded bliver JSON hentet for alle ruterne
 async function hentdata() {
     console.log("hentdata")
     const result = await fetch(url, options);
@@ -28,6 +30,7 @@ async function hentdata() {
     setRightValue();
 }
 
+// viser de oplysningerne fra JSON som er indenfor filtreringen
 function vis() {
     document.querySelector(".rute-list .content").textContent = "";
     console.log("vis");
@@ -49,18 +52,12 @@ function vis() {
     })
 }
 
+// Gå til single view når der klikkes på knappen
 function visDetaljer(rute) {
     location.href = `rute.html?id=${rute._id}`;
 }
 
-
-
-
-
-
-
-
-
+// Oprettelse af globale variabler til filtreringens funktionen
 var inputLeft = document.getElementById("input-left");
 var inputRight = document.getElementById("input-right");
 
@@ -68,6 +65,7 @@ var thumbLeft = document.querySelector(".slider .thumb.left");
 var thumbRight = document.querySelector(".slider .thumb.right");
 var range = document.querySelector(".slider .range");
 
+// Når venstre inputet er bliver ændret så kører denne funktion
 function setLeftValue() {
     var _this = inputLeft,
         min = parseInt(_this.min),
@@ -86,6 +84,7 @@ function setLeftValue() {
 }
 
 
+// Når højre inputet er bliver ændret så kører denne funktion
 function setRightValue() {
     var _this = inputRight,
         min = parseInt(_this.min),
@@ -107,10 +106,11 @@ function setRightValue() {
     filterRuterMax(_this);
 }
 
-
+// Lytter efter om inputet bliver ændret
 inputLeft.addEventListener("input", setLeftValue);
 inputRight.addEventListener("input", setRightValue);
 
+// Lytter efter om musen er over, trykket ned eller væk fra slideren. Den bruges til at lave animations effekter.
 inputLeft.addEventListener("mouseover", function () {
     thumbLeft.classList.add("hover");
 });
@@ -123,7 +123,6 @@ inputLeft.addEventListener("mousedown", function () {
 inputLeft.addEventListener("mouseup", function () {
     thumbLeft.classList.remove("active");
 });
-
 inputRight.addEventListener("mouseover", function () {
     thumbRight.classList.add("hover");
 });
@@ -137,6 +136,7 @@ inputRight.addEventListener("mouseup", function () {
     thumbRight.classList.remove("active");
 });
 
+// Opdatere loop-view efter input-værdierne er ændret
 function filterRuterMin(_this) {
     filterMin = _this.value;
     console.log("Min: " + filterMin);
