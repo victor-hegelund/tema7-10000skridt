@@ -41,10 +41,9 @@
     position: relative;
     width: 100%;
     height: 55vh;
-    background-size: cover;
-    background-image: url(img/top.png);
     background-position: 52% 10%;
     max-width: none;
+    cursor: pointer;
 }
 
 /*--knappen på baggrundsbilledet styles ekstra udover det i main.css, så den får blå border og placeres i midten af billedet--*/
