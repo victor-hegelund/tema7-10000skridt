@@ -22,6 +22,8 @@ async function loadJSON() {
     visRuter(rute);
 }
 
+// Henter alle oplysningerne om de forskellige ruter ind fra JSON, samt henter maps ind + lytter til klik på tilbageknap
+
 function visRuter() {
     document.querySelector(".navn").textContent = rute.navn;
     document.querySelector(".langBeskrivelse").textContent = rute.langBeskrivelse;
@@ -32,6 +34,8 @@ function visRuter() {
     document.querySelector("iframe").src = `https://www.google.com/maps/d/u/0/embed?mid=${rute.maps}`;
     document.querySelector("button").addEventListener("click", tilbage);
 }
+
+// Får tilbage knappen til at virke
 
 function tilbage() {
     history.back();
