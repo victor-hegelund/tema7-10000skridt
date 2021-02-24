@@ -8,7 +8,7 @@ let rute;
 
 const myHeaders = {
 
-    "x-apikey": "602e73575ad3610fb5bb6331";
+    "x-apikey": "602e73575ad3610fb5bb6331"
 }
 
 // Den lytter på at dommen er loaded
