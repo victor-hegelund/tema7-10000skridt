@@ -17,8 +17,17 @@
 article {
     display: grid;
     grid-auto-rows: minmax(0px, 0.9fr);
-    max-width: 226px;
+    max-width: auto;
     margin: 0 auto;
+}
+
+/*--Media ved 600px--*/
+@media (min-width:515px) {
+
+    /*--Den enkelte rute--*/
+    article {
+        max-width: 226px;
+    }
 }
 
 .article-tekst {

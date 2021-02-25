@@ -228,118 +228,119 @@
         width: 130px;
         margin-top: 20px;
     }
+}
 
-    /*--Media ved 750px--*/
-    @media (min-width:750px) {
+/*--Media ved 750px--*/
+@media (min-width:750px) {
 
-        /*--SECTION 1: Grid i to kolonner--*/
+    /*--SECTION 1: Grid i to kolonner--*/
 
-        #indledning {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-gap: 25px;
-        }
-
-        /*--Placering af elementer i grid--*/
-        #indledning .left_col {
-            grid-column: 1/2;
-        }
-
-        #indledning .right_col {
-            grid-column: 2/3;
-        }
-
-        #indledning img {
-            padding: 10px;
-        }
-
-        /*--SECTION 3--*/
-
-        /*--Placering og størrelse på fodtryk i grid--*/
-        #community .text_col img {
-            width: 125px;
-            margin-top: -8px;
-        }
-
-        /*--SECTION 4--*/
-
-        #newsletter .tilmeld .fuldenavn,
-        .email {
-            margin: 0px;
-        }
-
-        #knaptilruter .knap_udforsk {
-            font-size: 1.3rem;
-        }
+    #indledning {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 25px;
     }
 
-    /*--Media ved 900px--*/
-    @media (min-width:900px) {
-
-        /*--SECTION 3: nyt grid på 3 kolonner-----*/
-
-        #community .img_col {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-gap: 20px;
-        }
-
-        /*--Placring og størrelse på fodtryk i grid--*/
-        #community .text_col img {
-            width: 120px;
-            margin-top: -2px;
-        }
-
-        /*--SECTION 4-----*/
-
-        /*--Nyhedsbrev størrelse på input ændret--*/
-        #newsletter input {
-            width: 80%;
-        }
-
-        /*--Indsend knap skifter plads--*/
-        #newsletter button {
-            margin-top: -55px;
-            font-size: 1.1rem;
-        }
+    /*--Placering af elementer i grid--*/
+    #indledning .left_col {
+        grid-column: 1/2;
     }
 
-    /*--Media ved 1050px--*/
-    @media (min-width:1050px) {
-
-        /*-----SECTION 1: max bredte og margin ændret til auto i siderne-----*/
-
-        #indledning {
-            max-width: 950px;
-            margin: 70px auto 50px auto;
-        }
-
-        /*-----SECTION 2: max bredte og margin ændret til auto i siderne-----*/
-
-        #knaptilruter .knaptilruter_indhold {
-            max-width: 950px;
-            margin: 25px auto 50px auto;
-        }
-
-        #knaptilruter button {
-            font-size: 1.4rem;
-        }
-
-        /*--SECTION 3: max bredte og margin ændret til auto i siderne--*/
-        #community {
-            max-width: 950px;
-            margin: 25px auto 100px auto;
-        }
-
-        /*--SECTION 4: max bredte og margin ændret til auto i siderne--*/
-
-        #newsletter .newsletter_indhold {
-            max-width: 950px;
-            margin: 25px auto 50px auto;
-        }
-
-        /*--Nyhedsbrev størrelse på input ændret--*/
-        #newsletter input {
-            width: 65%;
-        }
+    #indledning .right_col {
+        grid-column: 2/3;
     }
+
+    #indledning img {
+        padding: 10px;
+    }
+
+    /*--SECTION 3--*/
+
+    /*--Placering og størrelse på fodtryk i grid--*/
+    #community .text_col img {
+        width: 125px;
+        margin-top: -8px;
+    }
+
+    /*--SECTION 4--*/
+
+    #newsletter .tilmeld .fuldenavn,
+    .email {
+        margin: 0px;
+    }
+
+    #knaptilruter .knap_udforsk {
+        font-size: 1.3rem;
+    }
+}
+
+/*--Media ved 900px--*/
+@media (min-width:900px) {
+
+    /*--SECTION 3: nyt grid på 3 kolonner-----*/
+
+    #community .img_col {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 20px;
+    }
+
+    /*--Placring og størrelse på fodtryk i grid--*/
+    #community .text_col img {
+        width: 120px;
+        margin-top: -2px;
+    }
+
+    /*--SECTION 4-----*/
+
+    /*--Nyhedsbrev størrelse på input ændret--*/
+    #newsletter input {
+        width: 80%;
+    }
+
+    /*--Indsend knap skifter plads--*/
+    #newsletter button {
+        margin-top: -55px;
+        font-size: 1.1rem;
+    }
+}
+
+/*--Media ved 1050px--*/
+@media (min-width:1050px) {
+
+    /*-----SECTION 1: max bredte og margin ændret til auto i siderne-----*/
+
+    #indledning {
+        max-width: 950px;
+        margin: 70px auto 50px auto;
+    }
+
+    /*-----SECTION 2: max bredte og margin ændret til auto i siderne-----*/
+
+    #knaptilruter .knaptilruter_indhold {
+        max-width: 950px;
+        margin: 25px auto 50px auto;
+    }
+
+    #knaptilruter button {
+        font-size: 1.4rem;
+    }
+
+    /*--SECTION 3: max bredte og margin ændret til auto i siderne--*/
+    #community {
+        max-width: 950px;
+        margin: 25px auto 100px auto;
+    }
+
+    /*--SECTION 4: max bredte og margin ændret til auto i siderne--*/
+
+    #newsletter .newsletter_indhold {
+        max-width: 950px;
+        margin: 25px auto 50px auto;
+    }
+
+    /*--Nyhedsbrev størrelse på input ændret--*/
+    #newsletter input {
+        width: 65%;
+    }
+}
