@@ -35,8 +35,12 @@ article {
 
 /* ---- Styling af tilbage knap -----  */
 
+.button {
+    text-align: right;
+}
+
 button {
-    float: right;
+
     width: 200px;
 }
 
