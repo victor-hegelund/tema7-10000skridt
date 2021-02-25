@@ -17,7 +17,7 @@
 article {
     display: grid;
     grid-auto-rows: minmax(0px, 0.9fr);
-    max-width: auto;
+    max-width: 100%;
     margin: 0 auto;
 }
 
