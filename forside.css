@@ -2,13 +2,12 @@
 
 /*--knappen styles ekstra udover det i main.css, så den får blå border og placeres i midten--*/
 .splash .knap_udforsk {
-    background-color: #25434D;
     background-color: transparent;
     color: white;
-    color: #25434D;
-    border: 2px solid #25434D;
-    padding: 20px 35px;
-    font-size: 1.6rem;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 14px 30px;
+    font-size: 1.3rem;
 
     position: absolute;
     top: 30%;
@@ -20,8 +19,8 @@
 .splash .knap_udforsk:hover {
     background-color: transparent;
     background-color: #25434D;
-    color: #25434D;
-    color: white;
+    color: #fff;
+    border: 2px solid #25434D;
 }
 
 /*--SECTION 1: styling i første section, ved brug af margin, padding og font-weight--*/
