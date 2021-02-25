@@ -18,6 +18,7 @@ article {
     display: grid;
     grid-auto-rows: minmax(0px, 0.9fr);
     max-width: 226px;
+    margin: 0 auto;
 }
 
 .article-tekst {

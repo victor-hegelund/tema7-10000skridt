@@ -1,9 +1,11 @@
+/*--hent skrifttyper ind--*/
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@500&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
+/*--Nulstil HTML dokument--*/
 * {
     box-sizing: border-box;
 }
