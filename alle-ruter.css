@@ -1,3 +1,5 @@
+/*--Indhold af ruter--*/
+
 .rute-list {
     margin: 0 20px 50px 20px;
 }
@@ -11,10 +13,12 @@
     grid-row-gap: 40px;
 }
 
+/*--Den enkelte rute--*/
 article {
     display: grid;
     grid-auto-rows: minmax(0px, 0.9fr);
-    max-width: 226px;}
+    max-width: 226px;
+}
 
 .article-tekst {
     grid-area: 2 / 1;
@@ -49,6 +53,7 @@ button {
     cursor: pointer;
 }
 
+/*--Slider - stærkt inspireret fra Codepen.io--*/
 .middle {
     margin: 50px 20px 50px 20px;
 }

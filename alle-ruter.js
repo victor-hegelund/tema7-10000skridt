@@ -57,6 +57,7 @@ function visDetaljer(rute) {
     location.href = `rute.html?id=${rute._id}`;
 }
 
+// Filtreringens funktionen er stærkt inspireret fra Codepen.io
 // Oprettelse af globale variabler til filtreringens funktionen
 var inputLeft = document.getElementById("input-left");
 var inputRight = document.getElementById("input-right");
