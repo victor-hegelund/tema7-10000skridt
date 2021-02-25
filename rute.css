@@ -1,3 +1,5 @@
+/* ---- Opbygning af html -----  */
+
 main {
     margin: 25px 20px 50px 20px;
 }
@@ -38,7 +40,7 @@ button {
     width: 200px;
 }
 
-/* ---- ????? -----  */
+/* ---- maps størrelse og styling -----  */
 
 iframe {
     width: 100%;

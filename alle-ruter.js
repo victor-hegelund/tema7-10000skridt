@@ -34,9 +34,6 @@ async function hentdata() {
 function vis() {
     document.querySelector(".rute-list .content").textContent = "";
     console.log("vis");
-    console.log(ruter);
-    console.log("filterMin: " + filterMin);
-    console.log("filterMax: " + filterMax);
 
     ruter.forEach(rute => {
         if (rute.skridt >= filterMin && rute.skridt <= filterMax || rute.skridt >= filterMin && filterMax == 10000) {
