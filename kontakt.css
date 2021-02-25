@@ -2,3 +2,12 @@
 .top-tekst {
     margin-bottom: 50px;
 }
+
+.kontakt-info {
+    display: grid;
+    grid-template-columns: 70px 1fr;
+}
+
+.kontakt-info p {
+    margin: auto 0;
+}
